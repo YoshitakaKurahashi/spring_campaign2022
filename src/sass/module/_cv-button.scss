@@ -1,12 +1,13 @@
 .cv-button {
   text-align: center;
+  max-width: rem(305);
+  width: 100%;
 }
 
 .cv-button__detail {
   text-align: center;
   letter-spacing: 0.05em;
   display: inline-block;
-  max-width: rem(305);
   width: 100%;
   color: $color-font-btn;
   background: $color-cv;

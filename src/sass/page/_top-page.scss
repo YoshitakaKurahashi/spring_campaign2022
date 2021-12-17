@@ -17,17 +17,15 @@
 }
 
 .header__nav {
-margin-right: rem(44);
+  margin-right: rem(44);
 }
 
 .nav__lists {
   display: flex;
   align-items: center;
-
 }
 
 .nav__list {
-
   &:first-child {
     margin-right: rem(26.7);
   }
@@ -39,7 +37,7 @@ margin-right: rem(44);
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       top: 50%;
       transform: translate(0, -50%);
       left: 0;
@@ -50,7 +48,7 @@ margin-right: rem(44);
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       top: 50%;
       transform: translate(0, -50%);
       right: 0;
@@ -65,7 +63,7 @@ margin-right: rem(44);
     font-size: rem(12);
     line-height: (26 / 12);
     color: $color-font;
-    padding: rem(10) 0 ;
+    padding: rem(10) 0;
   }
 }
 
@@ -89,7 +87,7 @@ margin-right: rem(44);
 
 .reserve__icon {
   position: absolute;
-  content: '';
+  content: "";
   width: rem(22.8);
   height: rem(23.2);
   top: 50%;
@@ -99,4 +97,101 @@ margin-right: rem(44);
   background-repeat: no-repeat;
 }
 
+/*  first-view  ****************************/
+.first-view {
+  height: (666 / 1080) * 100vw;
+  background: url(/assets/images/fv_pc.png) center center / cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
+.first-view__button {
+  margin: auto;
+  max-width: rem(305);
+  width: 100%;
+  margin-bottom: rem(21);
+}
+
+.first-view__annotation {
+  // text-align: center;
+  font-size: rem(12);
+  color: $color-font;
+  margin: 0 auto;
+  margin-bottom: rem(25);
+
+  a {
+    text-decoration: underline;
+    color: #378ce2;
+    text-align: center;
+  }
+}
+
+/*  about  ****************************/
+.about {
+  width: 100%;
+  padding: 0 $padding-pc;
+  padding-top: rem(132);
+  padding-bottom: rem(177);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 28.5%;
+    height: (233 / 308) * 71.5%;
+    background: url(/assets/images/about01.png) center center / cover;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 28.5%;
+    height: (233 / 308) * 71.5%;
+    background: url(/assets/images/about02.png) center center / cover;
+    background-repeat: no-repeat;
+  }
+
+}
+
+.about__title {
+  padding-left: rem(50);
+  position: relative;
+  max-width: rem(358.6);
+  width: 100%;
+  margin: auto;
+  margin-bottom: rem(64);
+  text-align: right;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background: url(/assets/images/icon-modelhouse.svg) center center / cover;
+    background-repeat: no-repeat;
+    width: rem(41.5);
+    height: rem(34.2);
+  }
+}
+
+.about__lead {
+  text-align: center;
+  font-size: rem(18);
+  letter-spacing: 0.04em;
+  line-height: (32 / 18);
+
+  span {
+    font-weight: 700;
+    background: linear-gradient(transparent 80%, #fff49b 80%);
+  }
+}

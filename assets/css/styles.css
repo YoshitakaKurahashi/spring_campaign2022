@@ -98,6 +98,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.75;
+  color: #707070;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -180,14 +181,15 @@ select::-ms-expand {
 
 .cv-button {
   text-align: center;
+  max-width: 305px;
+  max-width: 19.0625rem;
+  width: 100%;
 }
 
 .cv-button__detail {
   text-align: center;
   letter-spacing: 0.05em;
   display: inline-block;
-  max-width: 305px;
-  max-width: 19.0625rem;
   width: 100%;
   color: #FFFFFF;
   background: #92A2E0;
@@ -315,8 +317,13 @@ select::-ms-expand {
   }
 }
 
-.appp {
-  margin: 1px;
+.section__title {
+  font-size: 28px;
+  font-size: 1.75rem;
+  letter-spacing: 0.2em;
+  line-height: 1.42857;
+  color: #F196A0;
+  text-align: center;
 }
 
 /*  header  ****************************/
@@ -371,7 +378,7 @@ select::-ms-expand {
 
 .nav__list:nth-child(2)::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -385,7 +392,7 @@ select::-ms-expand {
 
 .nav__list:nth-child(2)::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -430,7 +437,7 @@ select::-ms-expand {
 
 .reserve__icon {
   position: absolute;
-  content: '';
+  content: "";
   width: 22.8px;
   width: 1.425rem;
   height: 23.2px;
@@ -442,6 +449,124 @@ select::-ms-expand {
           transform: translate(0, -50%);
   background: url(/assets/images/icon-attendance.svg) center center/cover;
   background-repeat: no-repeat;
+}
+
+/*  first-view  ****************************/
+.first-view {
+  height: 61.66667vw;
+  background: url(/assets/images/fv_pc.png) center center/cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.first-view__button {
+  margin: auto;
+  max-width: 305px;
+  max-width: 19.0625rem;
+  width: 100%;
+  margin-bottom: 21px;
+  margin-bottom: 1.3125rem;
+}
+
+.first-view__annotation {
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #707070;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
+}
+
+.first-view__annotation a {
+  text-decoration: underline;
+  color: #378ce2;
+  text-align: center;
+}
+
+/*  about  ****************************/
+.about {
+  width: 100%;
+  padding: 0 25px;
+  padding-top: 132px;
+  padding-top: 8.25rem;
+  padding-bottom: 177px;
+  padding-bottom: 11.0625rem;
+  position: relative;
+}
+
+.about::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 28.5%;
+  height: 54.08929%;
+  background: url(/assets/images/about01.png) center center/cover;
+  background-repeat: no-repeat;
+}
+
+.about::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 28.5%;
+  height: 54.08929%;
+  background: url(/assets/images/about02.png) center center/cover;
+  background-repeat: no-repeat;
+}
+
+.about__title {
+  padding-left: 50px;
+  padding-left: 3.125rem;
+  position: relative;
+  max-width: 358.6px;
+  max-width: 22.4125rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 64px;
+  margin-bottom: 4rem;
+  text-align: right;
+}
+
+.about__title::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background: url(/assets/images/icon-modelhouse.svg) center center/cover;
+  background-repeat: no-repeat;
+  width: 41.5px;
+  width: 2.59375rem;
+  height: 34.2px;
+  height: 2.1375rem;
+}
+
+.about__lead {
+  text-align: center;
+  font-size: 18px;
+  font-size: 1.125rem;
+  letter-spacing: 0.04em;
+  line-height: 1.77778;
+}
+
+.about__lead span {
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, transparent), color-stop(80%, #fff49b));
+  background: linear-gradient(transparent 80%, #fff49b 80%);
 }
 
 body {
