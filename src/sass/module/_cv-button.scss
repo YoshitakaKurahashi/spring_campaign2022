@@ -1,0 +1,93 @@
+.cv-button {
+  text-align: center;
+}
+
+.cv-button__detail {
+  text-align: center;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  max-width: rem(305);
+  width: 100%;
+  color: $color-font-btn;
+  background: $color-cv;
+  border-radius: rem(45);
+  padding-top: rem(33);
+  padding-bottom: rem(33);
+  font-size: rem(24);
+  // line-height: (40 / 24);
+  line-height: 1;
+  font-weight: 700;
+  border-bottom: rem(7) solid #6d79aa;
+  box-shadow: 0 rem(3) rem(5) rgba(#000000, 0.16);
+  transition: all 0.3s;
+}
+
+.cv-button__detail:hover {
+  margin-top: rem(5);
+  border-bottom: rem(2) solid #6d79aa;
+  transition: 0.1s;
+}
+
+.cv-button__reserve {
+  padding-left: rem(42);
+  position: relative;
+}
+
+.cv-button__icon01 {
+  position: absolute;
+  content: "";
+  width: rem(35);
+  height: rem(35.5);
+  top: 50%;
+  left: rem(71);
+  transform: translate(0, -50%);
+  background: url(/assets/images/icon-attendance.svg) center center / cover;
+  background-repeat: no-repeat;
+}
+
+.cv-button__icon02 {
+  position: absolute;
+  content: "";
+  width: rem(12.7);
+  height: rem(20.5);
+  top: 50%;
+  right: rem(27);
+  transform: translate(0, -50%);
+  background: url(/assets/images/icon-arrow01.svg) center center / cover;
+  background-repeat: no-repeat;
+}
+
+.cv-button__transmission {
+  padding-left: rem(20);
+  position: relative;
+}
+
+.cv-button__icon03 {
+  position: absolute;
+  content: "";
+  width: rem(32);
+  height: rem(30);
+  top: 46%;
+  left: rem(93);
+  transform: translate(0, -50%);
+  background: url(/assets/images/icon-transmission.svg) center center / cover;
+  background-repeat: no-repeat;
+}
+
+.cv-button__icon04 {
+  position: absolute;
+  content: "";
+  width: rem(12.7);
+  height: rem(20.5);
+  top: 50%;
+  right: rem(36);
+  transform: translate(0, -50%);
+  background: url(/assets/images/icon-arrow01.svg) center center / cover;
+  background-repeat: no-repeat;
+}
+
+.section {
+  background: #c6c6c6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

@@ -178,6 +178,127 @@ select::-ms-expand {
   margin: 1px;
 }
 
+.cv-button {
+  text-align: center;
+}
+
+.cv-button__detail {
+  text-align: center;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  max-width: 305px;
+  max-width: 19.0625rem;
+  width: 100%;
+  color: #FFFFFF;
+  background: #92A2E0;
+  border-radius: 2.8125rem;
+  padding-top: 33px;
+  padding-top: 2.0625rem;
+  padding-bottom: 33px;
+  padding-bottom: 2.0625rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 700;
+  border-bottom: 7px solid #6d79aa;
+  border-bottom: 0.4375rem solid #6d79aa;
+  -webkit-box-shadow: 0 0.1875rem 0.3125rem rgba(0, 0, 0, .16);
+          box-shadow: 0 0.1875rem 0.3125rem rgba(0, 0, 0, .16);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.cv-button__detail:hover {
+  margin-top: 5px;
+  margin-top: 0.3125rem;
+  border-bottom: 2px solid #6d79aa;
+  border-bottom: 0.125rem solid #6d79aa;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.cv-button__reserve {
+  padding-left: 42px;
+  padding-left: 2.625rem;
+  position: relative;
+}
+
+.cv-button__icon01 {
+  position: absolute;
+  content: "";
+  width: 35px;
+  width: 2.1875rem;
+  height: 35.5px;
+  height: 2.21875rem;
+  top: 50%;
+  left: 71px;
+  left: 4.4375rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background: url(/assets/images/icon-attendance.svg) center center/cover;
+  background-repeat: no-repeat;
+}
+
+.cv-button__icon02 {
+  position: absolute;
+  content: "";
+  width: 12.7px;
+  width: 0.79375rem;
+  height: 20.5px;
+  height: 1.28125rem;
+  top: 50%;
+  right: 27px;
+  right: 1.6875rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background: url(/assets/images/icon-arrow01.svg) center center/cover;
+  background-repeat: no-repeat;
+}
+
+.cv-button__transmission {
+  padding-left: 20px;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.cv-button__icon03 {
+  position: absolute;
+  content: "";
+  width: 32px;
+  width: 2rem;
+  height: 30px;
+  height: 1.875rem;
+  top: 46%;
+  left: 93px;
+  left: 5.8125rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background: url(/assets/images/icon-transmission.svg) center center/cover;
+  background-repeat: no-repeat;
+}
+
+.cv-button__icon04 {
+  position: absolute;
+  content: "";
+  width: 12.7px;
+  width: 0.79375rem;
+  height: 20.5px;
+  height: 1.28125rem;
+  top: 50%;
+  right: 36px;
+  right: 2.25rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background: url(/assets/images/icon-arrow01.svg) center center/cover;
+  background-repeat: no-repeat;
+}
+
+.section {
+  background: #c6c6c6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .l-inner {
   width: 100%;
   padding-right: 25px;
