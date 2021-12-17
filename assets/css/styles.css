@@ -319,6 +319,131 @@ select::-ms-expand {
   margin: 1px;
 }
 
+/*  header  ****************************/
+.header {
+  width: 100%;
+  padding-left: 34px;
+  padding-left: 2.125rem;
+  padding-right: 22px;
+  padding-right: 1.375rem;
+  height: 71px;
+  height: 4.4375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  max-width: 78.7px;
+  max-width: 4.91875rem;
+  margin-right: auto;
+}
+
+.header__nav {
+  margin-right: 44px;
+  margin-right: 2.75rem;
+}
+
+.nav__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__list:first-child {
+  margin-right: 26.7px;
+  margin-right: 1.66875rem;
+}
+
+.nav__list:nth-child(2) {
+  padding: 0 24.3px;
+  padding: 0 1.51875rem;
+  position: relative;
+  margin-right: 22.7px;
+  margin-right: 1.41875rem;
+}
+
+.nav__list:nth-child(2)::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 0;
+  height: 24.3px;
+  height: 1.51875rem;
+  width: 1px;
+  width: 0.0625rem;
+  background: #707070;
+}
+
+.nav__list:nth-child(2)::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 0;
+  height: 24.3px;
+  height: 1.51875rem;
+  width: 1px;
+  width: 0.0625rem;
+  background: #707070;
+}
+
+.nav__list a {
+  display: inline-block;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2.16667;
+  color: #707070;
+  padding: 10px 0;
+  padding: 0.625rem 0;
+}
+
+.header__reserve a {
+  display: inline-block;
+  width: 161px;
+  width: 10.0625rem;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  line-height: 1;
+  padding-top: 14px;
+  padding-top: 0.875rem;
+  padding-bottom: 14px;
+  padding-bottom: 0.875rem;
+  text-align: center;
+  background: #92A2E0;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding-left: 26px;
+  padding-left: 1.625rem;
+  border-radius: 0.25rem;
+  position: relative;
+}
+
+.reserve__icon {
+  position: absolute;
+  content: '';
+  width: 22.8px;
+  width: 1.425rem;
+  height: 23.2px;
+  height: 1.45rem;
+  top: 50%;
+  left: 15px;
+  left: 0.9375rem;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background: url(/assets/images/icon-attendance.svg) center center/cover;
+  background-repeat: no-repeat;
+}
+
 body {
   font-size: 16px;
   font-size: 1rem;

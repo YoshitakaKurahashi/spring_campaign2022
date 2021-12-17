@@ -1,0 +1,102 @@
+/*  header  ****************************/
+.header {
+  width: 100%;
+  padding-left: rem(34);
+  padding-right: rem(22);
+  height: rem(71);
+
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  max-width: rem(78.7);
+  margin-right: auto;
+  a {
+  }
+}
+
+.header__nav {
+margin-right: rem(44);
+}
+
+.nav__lists {
+  display: flex;
+  align-items: center;
+
+}
+
+.nav__list {
+
+  &:first-child {
+    margin-right: rem(26.7);
+  }
+
+  &:nth-child(2) {
+    padding: 0 rem(24.3);
+    position: relative;
+    margin-right: rem(22.7);
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 0;
+      height: rem(24.3);
+      width: rem(1);
+      background: $color-font;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 0;
+      height: rem(24.3);
+      width: rem(1);
+      background: $color-font;
+    }
+  }
+
+  a {
+    display: inline-block;
+    font-size: rem(12);
+    line-height: (26 / 12);
+    color: $color-font;
+    padding: rem(10) 0 ;
+  }
+}
+
+.header__reserve {
+  a {
+    display: inline-block;
+    width: rem(161);
+    font-size: rem(11);
+    line-height: 1;
+    padding-top: rem(14);
+    padding-bottom: rem(14);
+    text-align: center;
+    background: $color-cv;
+    color: $color-font-btn;
+    font-weight: 700;
+    padding-left: rem(26);
+    border-radius: rem(4);
+    position: relative;
+  }
+}
+
+.reserve__icon {
+  position: absolute;
+  content: '';
+  width: rem(22.8);
+  height: rem(23.2);
+  top: 50%;
+  left: rem(15);
+  transform: translate(0, -50%);
+  background: url(/assets/images/icon-attendance.svg) center center / cover;
+  background-repeat: no-repeat;
+}
+
+
