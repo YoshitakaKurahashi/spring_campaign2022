@@ -320,7 +320,6 @@ select::-ms-expand {
 .section__title {
   font-size: 28px;
   font-size: 1.75rem;
-  letter-spacing: 0.2em;
   line-height: 1.42857;
   color: #F196A0;
   text-align: center;
@@ -508,9 +507,12 @@ select::-ms-expand {
   z-index: -1;
   content: "";
   left: 0;
-  top: 0;
-  width: 28.5%;
-  height: 54.08929%;
+  top: 198px;
+  top: 12.375rem;
+  width: 308px;
+  width: 19.25rem;
+  height: 233px;
+  height: 14.5625rem;
   background: url(/assets/images/about01.png) center center/cover;
   background-repeat: no-repeat;
 }
@@ -519,10 +521,14 @@ select::-ms-expand {
   position: absolute;
   z-index: -1;
   content: "";
-  right: 0;
-  top: 0;
-  width: 28.5%;
-  height: 54.08929%;
+  top: 37px;
+  top: 2.3125rem;
+  right: -30px;
+  right: -1.875rem;
+  width: 347px;
+  width: 21.6875rem;
+  height: 445px;
+  height: 27.8125rem;
   background: url(/assets/images/about02.png) center center/cover;
   background-repeat: no-repeat;
 }
@@ -530,6 +536,7 @@ select::-ms-expand {
 .about__title {
   padding-left: 50px;
   padding-left: 3.125rem;
+  letter-spacing: 0.2em;
   position: relative;
   max-width: 358.6px;
   max-width: 22.4125rem;
@@ -569,6 +576,154 @@ select::-ms-expand {
   background: linear-gradient(transparent 80%, #fff49b 80%);
 }
 
+/*  present  ****************************/
+.present {
+  background: #FFF9F8;
+  padding: 0 25px;
+  padding-top: 90px;
+  padding-top: 5.625rem;
+  padding-bottom: 62px;
+  padding-bottom: 3.875rem;
+}
+
+.present__title {
+  padding-left: 52px;
+  padding-left: 3.25rem;
+  position: relative;
+  max-width: 384px;
+  max-width: 24rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 34px;
+  margin-bottom: 2.125rem;
+  text-align: right;
+  letter-spacing: 0.15em;
+}
+
+.present__title::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  background: url(/assets/images/icon-present.svg) center center/cover;
+  background-repeat: no-repeat;
+  width: 33px;
+  width: 2.0625rem;
+  height: 31px;
+  height: 1.9375rem;
+  text-align: center;
+}
+
+.present__contents {
+  background: #FFFFFF;
+  padding: 54px 69px 36.5px 88px;
+  padding: 3.375rem 4.3125rem 2.28125rem 5.5rem;
+  max-width: 936px;
+  max-width: 58.5rem;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 42px;
+  margin-bottom: 2.625rem;
+  background: linear-gradient(135deg, transparent 2.5rem, #FFFFFF 0) top left, linear-gradient(-135deg, transparent 0, #FFFFFF 0) top right, linear-gradient(-45deg, transparent 2.5rem, #FFFFFF 0) bottom right, linear-gradient(45deg, transparent 0, #FFFFFF 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__quo {
+  max-width: 378px;
+  max-width: 23.625rem;
+  width: 100%;
+  margin-right: auto;
+}
+
+.content__conditions {
+  max-width: 341px;
+  max-width: 21.3125rem;
+  width: 100%;
+  text-align: left;
+  margin-left: 10px;
+  margin-left: 0.625rem;
+}
+
+.conditions__title {
+  color: #F196A0;
+  border: 2px solid #F196A0;
+  border: 0.125rem solid #F196A0;
+  border-radius: 0.5rem;
+  max-width: 196px;
+  max-width: 12.25rem;
+  width: 100%;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  padding-top: 17.5px;
+  padding-top: 1.09375rem;
+  padding-bottom: 15.5px;
+  padding-bottom: 0.96875rem;
+  text-align: center;
+  margin-bottom: 17.5px;
+  margin-bottom: 1.09375rem;
+  position: relative;
+}
+
+.conditions__title::before {
+  position: absolute;
+  content: '';
+  top: -23px;
+  top: -1.4375rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background: url(/assets/images/present-ribbon.svg) center center/cover;
+  background-repeat: no-repeat;
+  width: 45.3px;
+  width: 2.83125rem;
+  height: 18.4px;
+  height: 1.15rem;
+}
+
+.conditions__lead {
+  letter-spacing: 0.04em;
+  line-height: 1.875;
+  padding-left: 26px;
+  padding-left: 1.625rem;
+  position: relative;
+  margin-bottom: 19px;
+  margin-bottom: 1.1875rem;
+}
+
+.conditions__lead::before {
+  position: absolute;
+  content: '▶︎';
+  color: #F196A0;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.conditions__text {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.present__button {
+  margin: auto;
+}
+
+/*  careful  ****************************/
 body {
   font-size: 16px;
   font-size: 1rem;
