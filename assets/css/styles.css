@@ -564,6 +564,12 @@ select::-ms-expand {
   margin-bottom: 1.0625rem;
 }
 
+@media screen and (max-width: 767px) {
+  .first-view__button {
+    margin-bottom: 1.625rem;
+  }
+}
+
 .first-view__annotation {
   font-size: 12px;
   font-size: 0.75rem;
@@ -575,7 +581,7 @@ select::-ms-expand {
 
 @media screen and (max-width: 767px) {
   .first-view__annotation {
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.40625rem;
   }
 }
 
@@ -599,7 +605,7 @@ select::-ms-expand {
 
 @media screen and (max-width: 767px) {
   .about {
-    padding: 1.5rem 0 13.25rem;
+    padding: 1.5rem 0 13rem;
   }
 }
 
@@ -665,31 +671,6 @@ select::-ms-expand {
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
-  .about__title {
-    max-width: 100%;
-    margin-bottom: 2rem;
-    padding-top: 0.9375rem;
-    padding-bottom: 0.6875rem;
-    background: #F196A0;
-    color: #FFFFFF;
-    text-align: center;
-  }
-  .about__title span {
-    position: relative;
-  }
-  .about__title span::before {
-    position: absolute;
-    content: "";
-    left: -2.1875rem;
-    bottom: 0rem;
-    background: url(/assets/images/icon-modelhouse-sp.svg) center center/cover;
-    background-repeat: no-repeat;
-    width: 1.75rem;
-    height: 1.4375rem;
-  }
-}
-
 .about__title span {
   position: relative;
 }
@@ -711,8 +692,28 @@ select::-ms-expand {
 }
 
 @media screen and (max-width: 767px) {
+  .about__title {
+    max-width: 100%;
+    margin-bottom: 1.75rem;
+    margin-left: 0;
+    padding-top: 0.9375rem;
+    padding-bottom: 0.6875rem;
+    background: #F196A0;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .about__title span {
+    position: relative;
+  }
   .about__title span::before {
-    content: none;
+    position: absolute;
+    content: "";
+    left: -2.8125rem;
+    bottom: 0rem;
+    background: url(/assets/images/icon-modelhouse-sp.svg) center center/cover;
+    background-repeat: no-repeat;
+    width: 1.75rem;
+    height: 1.4375rem;
   }
 }
 

@@ -174,6 +174,10 @@
   max-width: rem(305);
   width: 100%;
   margin-bottom: rem(17);
+
+  @include mq(md) {
+    margin-bottom: rem(26);
+  }
 }
 
 .first-view__annotation {
@@ -184,7 +188,7 @@
   margin-bottom: rem(20);
 
   @include mq(md) {
-    margin-bottom: rem(30);
+    margin-bottom: rem(22.5);
   }
 
   a {
@@ -204,7 +208,7 @@
   overflow: hidden;
 
   @include mq(md) {
-    padding: rem(24) 0 rem(212);
+    padding: rem(24) 0 rem(208);
   }
 
   &::before {
@@ -255,32 +259,6 @@
   margin-left: rem(10);
   text-align: center;
 
-  @include mq(md) {
-    max-width: 100%;
-    margin-bottom: rem(32);
-    padding-top: rem(15);
-    padding-bottom: rem(11);
-    background: $color-main;
-    color: $color-font-btn;
-    text-align: center;
-
-    span {
-      position: relative;
-
-      &::before {
-        position: absolute;
-        content: "";
-        left: rem(-35);
-        bottom: rem(0);
-        background: url(/assets/images/icon-modelhouse-sp.svg) center center /
-          cover;
-        background-repeat: no-repeat;
-        width: rem(28);
-        height: rem(23);
-      }
-    }
-  }
-
   span {
     position: relative;
     &::before {
@@ -293,9 +271,32 @@
       background-repeat: no-repeat;
       width: rem(41.5);
       height: rem(34.2);
-  
-      @include mq(md) {
-        content: none;
+    }
+  }
+
+  @include mq(md) {
+    max-width: 100%;
+    margin-bottom: rem(28);
+    margin-left: 0;
+    padding-top: rem(15);
+    padding-bottom: rem(11);
+    background: $color-main;
+    color: $color-font-btn;
+    text-align: center;
+
+    span {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: rem(-45);
+        bottom: rem(0);
+        background: url(/assets/images/icon-modelhouse-sp.svg) center center /
+          cover;
+        background-repeat: no-repeat;
+        width: rem(28);
+        height: rem(23);
       }
     }
   }
