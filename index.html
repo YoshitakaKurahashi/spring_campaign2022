@@ -18,10 +18,12 @@
     <!-- ファビコン -->
     <link rel="”icon”" href="" />
     <!-- css -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script defer type="text/javascript" src="./assets/js/script.js"></script>
+    
   </head>
   <body>
     <header class="header">
@@ -125,15 +127,175 @@
     <!-- /.present -->
 
     <section class="shop">
-      <h2 class="shop__title section__title">モデルハウス/店舗</h2><!-- /.shop__title section__title -->
-      
-    </section><!-- /.shop -->
+      <div class="shop-inner">
+        <h2 class="shop__title section__title">モデルハウス/店舗</h2><!-- /.shop__title section__title -->
+        <div class="shop__tab-menu">
+          <ul class="tab-menu">
+            <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger is-active" data-id="tab01">
+              加東市<br>
+              モデルハウス
+            </span></li>
+            <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger" data-id="tab02">
+              加古川<br>
+              モデルハウス</span></li>
+            <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger" data-id="tab03">
+              三木市末広<br>
+              モデルハウス</span></li>
+            <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger" data-id="tab04">
+              三木本社</span></li>
+            <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger" data-id="tab05">
+              加東支店</span></li>
+          </ul><!-- .tab-menu -->
+        </div><!-- /.shop__tab -->
 
-    <section class="careful">
-      <div class="careful-inner">
-        <h2 class="careful__title section__title">
+        <div class="shop__tab-content">
+          <div class="tab-content">
+            <div class="tab-content__item js-tab-target is-active" id="tab01">
+              <!-- 加東市モデルハウス -->
+              <div class="swiper">
+                <div class="swiper-container slider slider01">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-4.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-5.jpg" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              
+              <!-- サムネイル -->
+              <div class="swiper-container slider-thumbnail slider-thumbnail01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-2.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-3.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-4.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-5.jpg" alt=""></div>
+                </div>
+              </div>
+            </div><!-- /.swiper -->
+              <p>兵庫県加東市梶原287-7</p>
+            </div><!-- .tab-content__item -->
+            <div class="tab-content__item js-tab-target" id="tab02">
+              <!-- 加古川モデルハウス -->
+              <div class="swiper">
+                <div class="swiper-container slider slider02">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house2-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house2-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house2-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house2-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house2-5.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                
+                <!-- サムネイル -->
+                <div class="swiper-container slider-thumbnail slider-thumbnail02">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house2-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house2-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house2-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house2-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house2-5.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div><!-- /.swiper -->
+              <p>兵庫県加古川市野口町野口188-2（ABCハウジング加古川住宅公園内）</p>
+            </div><!-- .tab-content__item -->
+            <div class="tab-content__item js-tab-target" id="tab03">
+              <!-- 三木市末広モデルハウス -->
+              <div class="swiper">
+                <div class="swiper-container slider slider03">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house3-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house3-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house3-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house3-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house3-5.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                
+                <!-- サムネイル -->
+                <div class="swiper-container slider-thumbnail slider-thumbnail03">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house3-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house3-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house3-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house3-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house3-5.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div><!-- /.swiper -->
+              <p>兵庫県三木市末広1丁目3ｰ1ｰ17</p>
+            </div><!-- .tab-content__item -->
+            <div class="tab-content__item js-tab-target" id="tab04">
+              <!-- 三木本社 -->
+              <div class="swiper">
+                <div class="swiper-container slider slider04">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house4-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house4-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house4-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house4-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house4-5.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                
+                <!-- サムネイル -->
+                <div class="swiper-container slider-thumbnail slider-thumbnail04">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house4-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house4-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house4-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house4-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house4-5.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div><!-- /.swiper -->
+              <p>兵庫県三木市平田120-1</p>
+            </div><!-- .tab-content__item -->
+            <div class="tab-content__item js-tab-target" id="tab05">
+              <!-- 加古川モデルハウス -->
+              <div class="swiper">
+                <div class="swiper-container slider slider05">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house5-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house5-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house5-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house5-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house5-5.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+                
+                <!-- サムネイル -->
+                <div class="swiper-container slider-thumbnail slider-thumbnail05">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house5-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house5-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house5-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house5-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house5-5.jpg" alt=""></div>
+                  </div>
+                </div>
+              </div><!-- /.swiper -->
+              <p>兵庫県加東市穂積 779-1</p>
+            </div><!-- .tab-content__item -->
+          </div><!-- .tab-content -->
+        </div><!-- /.shop__tab-content -->
+        
+        <p class="careful__title">
           新型コロナウイルスの感染拡大防止
-        </h2>
+        </p>
         <!-- /.careful-item__title section__title -->
         <div class="careful__item careful-item">
           <div class="careful-item__lead">
@@ -196,10 +358,8 @@
           <!-- /.careful-item__detail -->
         </div>
         <!-- /.careful__item -->
-      </div>
-      <!-- /.careful-inner -->
-    </section>
-    <!-- /.careful -->
+      </div><!-- /.shop-inner -->
+    </section><!-- /.shop -->
 
     <section class="contact">
       <h2 class="contact__title section__title">来場・来店のご予約</h2><!-- /.contact__title section__title -->
@@ -265,6 +425,30 @@
       <div class="footer__logo"><img src="/assets/images/contents.svg" alt="秋山住研"></div><!-- /.footer__logo -->
       <div class="footer__copyright"><small>&copy 2018 Akiyama Jyuken All Rights Reserved.</small></div><!-- /.footer__copyright -->
     </footer><!-- /.footer -->
+
+    <!-- adulation -->
+    <div class="adulation pagetop">
+      <div class="adulation__to-reserve">
+        <a href="">
+          今すぐ<br>
+          来場予約
+        </a>
+      </div><!-- /.to-reserve -->
+      <div class="adulation__to-top">
+        <a href="#">
+          TOPへ<br>
+          戻る
+        </a>
+      </div><!-- /.to-top -->
+    </div><!-- /.adulation -->
+
+    <!-- JavaScript -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script defer type="text/javascript" src="./assets/js/script.js"></script>
 
   </body>
 </html>
