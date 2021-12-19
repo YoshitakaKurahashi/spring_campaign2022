@@ -28,7 +28,7 @@
   <body>
     <header class="header">
       <h1 class="header__logo">
-        <a href=""><img src="./assets/images/contents.svg" alt="秋山住研" /></a>
+        <a href="https://www.aki-jyu.com/"><img src="./assets/images/contents.svg" alt="秋山住研" /></a>
       </h1>
       <!-- /.header__logo -->
       <div class="header__nav">
@@ -44,7 +44,8 @@
       </div>
       <!-- /.header__nav -->
       <div class="header__reserve">
-        <a href=""><span class="reserve__icon"></span>来場・来店のご予約</a>
+        <a href="#contact" class="header__reserve--pc"><span class="reserve__icon"></span>来場・来店のご予約</a>
+        <a href="#contact" class="header__reserve--sp"><span class="reserve__icon--sp"></span>予約</a>
       </div>
       <!-- /.header__reserve -->
     </header>
@@ -70,7 +71,7 @@
     <!-- /.first-view -->
 
     <section class="about" id="about">
-      <h2 class="section__title about__title">秋山住研の家づくり</h2>
+      <h2 class="section__title about__title"><span></span>秋山住研の家づくり</h2>
       <!-- /.about__title -->
       <div class="about__lead">
         私たちが家づくりで大切にしているもの。<br />
@@ -83,7 +84,7 @@
     <!-- /.about -->
 
     <section class="present" id="present">
-      <h2 class="section__title present__title">Quoカードプレゼント</h2>
+      <h2 class="section__title present__title"><span></span>Quoカードプレゼント</h2>
       <!-- /.section__title present__title -->
       <div class="present__contents content">
         <div class="content__quo">
@@ -93,21 +94,26 @@
           />
         </div>
         <!-- /.content__quo -->
-        <div class="content__conditions conditions">
-          <div class="conditions__title">プレゼント条件</div>
-          <!-- /.conditions__title -->
-          <ul class="conditions__leads">
-            <li class="conditions__lead">住宅購入・建設の計画のある方</li>
-            <!-- /.conditions__lead -->
-            <li class="conditions__lead">当社への“ご来場”が初めての方</li>
-            <!-- /.conditions__lead -->
-            <li class="conditions__lead">来場時にアンケート協力いただける方</li>
-            <!-- /.conditions__lead -->
-          </ul>
-          <!-- /.conditions__leads -->
+        <div class="content__conditions">
+          <div class="conditions">
+            <div class="conditions__title">
+              プレゼント<br>
+              条件
+            </div>
+            <!-- /.conditions__title -->
+            <ul class="conditions__leads">
+              <li class="conditions__lead">住宅購入・建設の計画のある方</li>
+              <!-- /.conditions__lead -->
+              <li class="conditions__lead">当社への“ご来場”が初めての方</li>
+              <!-- /.conditions__lead -->
+              <li class="conditions__lead">来場時にアンケート協力いただける方</li>
+              <!-- /.conditions__lead -->
+            </ul>
+            <!-- /.conditions__leads -->
+          </div><!-- /.conditions -->
           <div class="conditions__text">
-            ※2022年1月6日〜16日まで対象期間内に来場
-            いただける方、及び上記の３つの条件を満たされた方を
+            ※2022年1月6日〜16日まで対象期間内に来場<br>
+            いただける方、及び上記の３つの条件を満たされた方を<br>
             対象とさせていただきます。
           </div>
           <!-- /.conditions__text -->
@@ -128,7 +134,7 @@
 
     <section class="shop">
       <div class="shop-inner">
-        <h2 class="shop__title section__title">モデルハウス/店舗</h2><!-- /.shop__title section__title -->
+        <h2 class="shop__title section__title"><span></span>モデルハウス/店舗</h2><!-- /.shop__title section__title -->
         <div class="shop__tab-menu">
           <ul class="tab-menu">
             <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger is-active" data-id="tab01">
@@ -152,34 +158,45 @@
           <div class="tab-content">
             <div class="tab-content__item js-tab-target is-active" id="tab01">
               <!-- 加東市モデルハウス -->
+              <div class="shop-information">
+                <div class="shop-information__name">加東市モデルハウス</div><!-- /.shop-information__name -->
+                <div class="shop-information__address">兵庫県加東市梶原287-7</div><!-- /.shop-information__address -->
+              </div><!-- /.shop-information -->
               <div class="swiper">
                 <div class="swiper-container slider slider01">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-1.jpg" alt=""></div>
                     <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-2.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-3.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-4.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-5.jpg" alt=""></div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
               
-              <!-- サムネイル -->
-              <div class="swiper-container slider-thumbnail slider-thumbnail01">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-1.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-2.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-3.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-4.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-5.jpg" alt=""></div>
+                <!-- サムネイル -->
+                <div class="swiper-container slider-thumbnail slider-thumbnail01">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/images/model-house/model-house1-5.jpg" alt=""></div>
+                  </div>
                 </div>
-              </div>
-            </div><!-- /.swiper -->
+              </div><!-- /.swiper -->
               <p>兵庫県加東市梶原287-7</p>
             </div><!-- .tab-content__item -->
             <div class="tab-content__item js-tab-target" id="tab02">
               <!-- 加古川モデルハウス -->
+              <div class="shop-information">
+                <div class="shop-information__name">加古川モデルハウス</div><!-- /.shop-information__name -->
+                <div class="shop-information__address">
+                  兵庫県加古川市野口町野口188-2 <br>
+                  （ABCハウジング加古川住宅公園内）
+                </div><!-- /.shop-information__address -->
+              </div><!-- /.shop-information -->
               <div class="swiper">
                 <div class="swiper-container slider slider02">
                   <div class="swiper-wrapper">
@@ -208,6 +225,10 @@
             </div><!-- .tab-content__item -->
             <div class="tab-content__item js-tab-target" id="tab03">
               <!-- 三木市末広モデルハウス -->
+              <div class="shop-information">
+                <div class="shop-information__name">三木市末広モデルハウス</div><!-- /.shop-information__name -->
+                <div class="shop-information__address">兵庫県三木市末広1丁目3ｰ1ｰ17</div><!-- /.shop-information__address -->
+              </div><!-- /.shop-information -->
               <div class="swiper">
                 <div class="swiper-container slider slider03">
                   <div class="swiper-wrapper">
@@ -236,6 +257,10 @@
             </div><!-- .tab-content__item -->
             <div class="tab-content__item js-tab-target" id="tab04">
               <!-- 三木本社 -->
+              <div class="shop-information">
+                <div class="shop-information__name">三木本社</div><!-- /.shop-information__name -->
+                <div class="shop-information__address">兵庫県三木市平田120-1</div><!-- /.shop-information__address -->
+              </div><!-- /.shop-information -->
               <div class="swiper">
                 <div class="swiper-container slider slider04">
                   <div class="swiper-wrapper">
@@ -264,6 +289,10 @@
             </div><!-- .tab-content__item -->
             <div class="tab-content__item js-tab-target" id="tab05">
               <!-- 加古川モデルハウス -->
+              <div class="shop-information">
+                <div class="shop-information__name">加東支店</div><!-- /.shop-information__name -->
+                <div class="shop-information__address">兵庫県加東市穂積 779-1</div><!-- /.shop-information__address -->
+              </div><!-- /.shop-information -->
               <div class="swiper">
                 <div class="swiper-container slider slider05">
                   <div class="swiper-wrapper">
@@ -292,12 +321,12 @@
             </div><!-- .tab-content__item -->
           </div><!-- .tab-content -->
         </div><!-- /.shop__tab-content -->
-        
-        <p class="careful__title">
-          新型コロナウイルスの感染拡大防止
-        </p>
-        <!-- /.careful-item__title section__title -->
-        <div class="careful__item careful-item">
+        <div class="careful">
+          <p class="careful__title">
+            新型コロナウイルスの感染拡大防止
+          </p>
+          <!-- /.careful-item__title section__title -->
+          <div class="careful__item careful-item">
           <div class="careful-item__lead">
             下記徹底の上、イベントを実施いたします。
           </div>
@@ -358,6 +387,7 @@
           <!-- /.careful-item__detail -->
         </div>
         <!-- /.careful__item -->
+      </div><!-- /.careful -->
       </div><!-- /.shop-inner -->
     </section><!-- /.shop -->
 

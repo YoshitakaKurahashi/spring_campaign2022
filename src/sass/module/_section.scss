@@ -3,4 +3,9 @@
   line-height: (40 / 28);
   color: $color-main;
   text-align: center;
+
+  @include mq(md) {
+    font-size: rem(18);
+    line-height: 1;
+  }
 }
