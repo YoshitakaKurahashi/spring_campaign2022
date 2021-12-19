@@ -12,15 +12,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   var topBtn = $('.pagetop');
   topBtn.hide();
+  var toReserve = $('.toreserve');
+  toReserve.hide();
 
   // ボタンの表示設定
   $(window).scroll(function () {
     if ($(this).scrollTop() > 600) {
       // 指定px以上のスクロールでボタンを表示
       topBtn.fadeIn();
+      toReserve.fadeIn();
     } else {
       // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
+      toReserve.fadeOut();
     }
   });
 
@@ -41,7 +45,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     let header = $('header').innerHeight();
     let target = $(this.hash);
     if (!target.length) return;
-    let targetY = target.offset().top - header;
+    let targetY = target.offset().top;
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });

@@ -10,15 +10,19 @@ jQuery(function ($) {
     $("html").toggleClass("is-fixed");
   });
   var topBtn = $('.pagetop');
-  topBtn.hide(); // ボタンの表示設定
+  topBtn.hide();
+  var toReserve = $('.toreserve');
+  toReserve.hide(); // ボタンの表示設定
 
   $(window).scroll(function () {
     if ($(this).scrollTop() > 600) {
       // 指定px以上のスクロールでボタンを表示
       topBtn.fadeIn();
+      toReserve.fadeIn();
     } else {
       // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
+      toReserve.fadeOut();
     }
   }); // ボタンをクリックしたらスクロールして上に戻る
 
@@ -34,7 +38,7 @@ jQuery(function ($) {
     var header = $('header').innerHeight();
     var target = $(this.hash);
     if (!target.length) return;
-    var targetY = target.offset().top - header;
+    var targetY = target.offset().top;
     $('html,body').animate({
       scrollTop: targetY
     }, time, 'swing');
