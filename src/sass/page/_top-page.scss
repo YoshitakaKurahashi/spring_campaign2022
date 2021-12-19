@@ -1466,7 +1466,7 @@ textarea::placeholder {
 
     @include mq(md) {
       font-size: rem(12);
-      
+
     }
   }
 }
@@ -1542,5 +1542,21 @@ textarea::placeholder {
       background: url(/assets/images/icon-top.svg) center center / cover;
       background-repeat: no-repeat;
     }
+  }
+}
+
+.adulation__to-reserve--sp {
+  display: none;
+
+  a {
+
+  }
+}
+
+.adulation__to-top--sp {
+  display: none;
+
+  a {
+
   }
 }

@@ -2271,6 +2271,14 @@ textarea::placeholder {
   background-repeat: no-repeat;
 }
 
+.adulation__to-reserve--sp {
+  display: none;
+}
+
+.adulation__to-top--sp {
+  display: none;
+}
+
 body {
   font-size: 16px;
   font-size: 1rem;
