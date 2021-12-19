@@ -12,6 +12,10 @@ jQuery(function ($) {
   var topBtn = $('.pagetop');
   topBtn.hide();
   var toReserve = $('.toreserve');
+  toReserve.hide();
+  var topBtnSP = $('.pagetop-sp');
+  topBtn.hide();
+  var toReserveSP = $('.toreserve-sp');
   toReserve.hide(); // ボタンの表示設定
 
   $(window).scroll(function () {
@@ -19,10 +23,14 @@ jQuery(function ($) {
       // 指定px以上のスクロールでボタンを表示
       topBtn.fadeIn();
       toReserve.fadeIn();
+      topBtnSP.fadeIn();
+      toReserveSP.fadeIn();
     } else {
       // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
       toReserve.fadeOut();
+      topBtnSP.fadeOut();
+      toReserveSP.fadeOut();
     }
   }); // ボタンをクリックしたらスクロールして上に戻る
 
