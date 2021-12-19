@@ -717,12 +717,41 @@ textarea {
   border: rem(1) solid #cccccc;
   padding: rem(12) rem(16);
   line-height: 1;
+  color: $color-font;
+
+  &:required {
+    background: $color-base-2;
+  }
+
+  &::placeholder {
+    font-size: rem(16);
+    font-weight: 400;
+    color: #D3D3D3;
+  }
+}
+
+select {
+  position: relative;
+
 }
 
 .form-model-house {
   margin-bottom: rem(40);
   display: flex;
   align-items: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '▼';
+    top: 50%;
+    right: rem(20);
+    transform: translate(0, -50%);
+    width: rem(9);
+    height: rem(17);
+    font-size: rem(10);
+    color: $color-font;
+  }
 }
 
 .form__item {
@@ -732,6 +761,19 @@ textarea {
 }
 
 .form-day {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '▼';
+    top: 50%;
+    right: rem(20);
+    transform: translate(0, -50%);
+    width: rem(9);
+    height: rem(17);
+    font-size: rem(10);
+    color: $color-font;
+  }
 }
 
 .form-calendar {
@@ -740,7 +782,7 @@ textarea {
 }
 
 .form-time {
-  width: calc(100% - #{rem(276)} - #{rem(16)});
+  width: calc(100% - 292px);
 }
 
 .form-name {
@@ -750,11 +792,25 @@ textarea {
 }
 
 .form-email {
+
+  label {
+    &::before {
+      content: '任意';
+      background: #CCCCCC;
+    }
+  }
 }
 
 .form-content {
   textarea {
     height: rem(160);
+  }
+
+  label {
+    &::before {
+      content: '任意';
+      background: #CCCCCC;
+    }
   }
 }
 
@@ -799,7 +855,6 @@ textarea::placeholder {
     transition: all 0.3s ease;
     font-size: rem(16);
     font-weight: 400;
-    // margin-left: rem(21);
 
     @include mq(md) {
       font-size: rem(16);
@@ -813,9 +868,6 @@ textarea::placeholder {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-    }
-
-    &::before {
       content: "";
       background: #ffffff;
       border: 1px solid $color-font;
@@ -829,25 +881,15 @@ textarea::placeholder {
     &::after {
       position: absolute;
       content: "";
-      border-left: 3px solid #9c9c9c;
-      border-bottom: 3px solid #9c9c9c;
+      border-left: rem(2) solid #9c9c9c;
+      border-bottom: rem(2) solid #9c9c9c;
       transform: rotate(-45deg);
       width: rem(15);
-      height: rem(10);
-      top: rem(7);
+      height: rem(7);
+      top: rem(8);
       left: rem(2);
       transition: opacity 0.3s ease 0s;
       opacity: 0;
-    }
-
-    &:hover::before {
-      border: 1px solid $color-font;
-      filter: drop-shadow(0 0 4px $color-font);
-      box-shadow: 0 0 4px $color-font inset;
-    }
-
-    &:active::before {
-      background: rgba(21, 151, 65, 0.15);
     }
 
     a {
