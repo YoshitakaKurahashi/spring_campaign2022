@@ -1,11 +1,16 @@
 /*  header  ****************************/
 .header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
   width: 100%;
   padding-left: rem(34);
   padding-right: rem(22);
   height: rem(71);
   display: flex;
   align-items: center;
+  background: $color-base-1;
 
   @include mq(md) {
     padding-left: rem(22);
@@ -152,6 +157,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-top: rem(71);
 
   @include mq(md) {
     height: (615 / 375) * 100vw;
@@ -167,7 +173,7 @@
   margin: auto;
   max-width: rem(305);
   width: 100%;
-  margin-bottom: rem(21);
+  margin-bottom: rem(17);
 }
 
 .first-view__annotation {
@@ -175,7 +181,7 @@
   font-size: rem(12);
   color: $color-font;
   margin: 0 auto;
-  margin-bottom: rem(25);
+  margin-bottom: rem(20);
 
   @include mq(md) {
     margin-bottom: rem(30);
@@ -192,8 +198,8 @@
 .about {
   width: 100%;
   padding: 0 $padding-pc;
-  padding-top: rem(132);
-  padding-bottom: rem(177);
+  padding-top: rem(127);
+  padding-bottom: rem(170);
   position: relative;
   overflow: hidden;
 
@@ -244,11 +250,10 @@
   padding-left: rem(50);
   letter-spacing: 0.2em;
   position: relative;
-  max-width: rem(358.6);
   width: 100%;
-  margin: auto;
-  margin-bottom: rem(64);
-  text-align: right;
+  margin-bottom: rem(50);
+  margin-left: rem(10);
+  text-align: center;
 
   @include mq(md) {
     max-width: 100%;
@@ -276,19 +281,22 @@
     }
   }
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
-    background: url(/assets/images/icon-modelhouse.svg) center center / cover;
-    background-repeat: no-repeat;
-    width: rem(41.5);
-    height: rem(34.2);
-
-    @include mq(md) {
-      content: none;
+  span {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: rem(-63);
+      transform: translate(0, -50%);
+      background: url(/assets/images/concept-img03@2x.svg) center center / cover;
+      background-repeat: no-repeat;
+      width: rem(41.5);
+      height: rem(34.2);
+  
+      @include mq(md) {
+        content: none;
+      }
     }
   }
 }
@@ -314,7 +322,7 @@
 .present {
   background: $color-base-2;
   padding: 0 $padding-pc;
-  padding-top: rem(90);
+  padding-top: rem(87);
   padding-bottom: rem(62);
 
   @include mq(md) {
@@ -377,7 +385,7 @@
 
 .present__contents {
   background: $color-base-1;
-  padding: rem(54) rem(69) rem(36.5) rem(88);
+  padding: rem(48) rem(69) rem(32.5) rem(79);
   max-width: rem(936);
   width: 100%;
   margin: auto;
@@ -407,9 +415,10 @@
 }
 
 .content__quo {
-  max-width: rem(378);
+  max-width: rem(395);
   width: 100%;
   margin-right: auto;
+  margin-top: rem(-17);
 
   @include mq(md) {
     margin: auto;
@@ -443,9 +452,9 @@
   letter-spacing: 0.02em;
   line-height: 1;
   padding-top: rem(17.5);
-  padding-bottom: rem(15.5);
+  padding-bottom: rem(11.5);
   text-align: center;
-  margin-bottom: rem(17.5);
+  margin-bottom: rem(11.5);
   position: relative;
 
   @include mq(md) {
@@ -483,14 +492,15 @@
 }
 
 .conditions__leads {
+  margin-bottom: rem(9);
+
 }
 
 .conditions__lead {
   letter-spacing: 0.04em;
   line-height: (30 / 16);
-  padding-left: rem(26);
+  padding-left: rem(23);
   position: relative;
-  margin-bottom: rem(19);
 
   @include mq(md) {
     letter-spacing: 0.03em;
@@ -521,14 +531,6 @@
     letter-spacing: 0.02em;
     text-align: center;
   }
-
-  br {
-    display: none;
-
-    @include mq(md) {
-      display: block;
-    }
-  }
 }
 
 .present__button {
@@ -537,7 +539,7 @@
 
 /*  shop  ****************************/
 .shop {
-  padding: rem(90) $padding-pc rem(90);
+  padding: rem(88) $padding-pc rem(90);
 
   @include mq(md) {
     padding: rem(24) 0 rem(50);
@@ -558,12 +560,25 @@
 
 .shop__title {
   letter-spacing: 0.15em;
-  margin: auto;
-  margin-bottom: rem(54);
+  margin-bottom: rem(49);
   position: relative;
-  max-width: rem(332);
-  width: 100%;
-  text-align: right;
+  text-align: center;
+  margin-left: rem(66);
+
+  span {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: rem(-62);
+      bottom: rem(0);
+      background: url(/assets/images/icon-modelhouse.svg) center center / cover;
+      background-repeat: no-repeat;
+      width: rem(39);
+      height: rem(30);
+    }
+  }
 
   @include mq(md) {
     letter-spacing: 0.2em;
@@ -587,22 +602,6 @@
         width: rem(23.8);
         height: rem(22.5);
       }
-    }
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
-    background: url(/assets/images/icon-modelhouse.svg) center center / cover;
-    background-repeat: no-repeat;
-    width: rem(41.5);
-    height: rem(34.2);
-
-    @include mq(md) {
-      content: none;
     }
   }
 }
@@ -656,7 +655,7 @@
   max-width: rem(601);
   width: 100%;
   margin: auto;
-  margin-bottom: rem(97);
+  margin-bottom: rem(94);
 
   @include mq(md) {
     max-width: rem(540);
@@ -871,7 +870,7 @@
 
 .careful-item {
   padding-top: rem(26);
-  padding-bottom: rem(29);
+  padding-bottom: rem(30);
 
   @include mq(md) {
     padding-top: rem(17);
@@ -883,7 +882,7 @@
   letter-spacing: 0.04em;
   line-height: 1;
   text-align: center;
-  margin-bottom: rem(25);
+  margin-bottom: rem(20);
 
   @include mq(md) {
     font-size: rem(13);
@@ -895,7 +894,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  margin-bottom: rem(36.6);
+  margin-bottom: rem(25.6);
 
   @include mq(md) {
     // justify-content: space-between;
@@ -910,7 +909,7 @@
     margin-right: rem(44);
     img {
       width: rem(70.8);
-      margin-bottom: rem(17.8);
+      margin-bottom: rem(12.8);
     }
 
     @include mq(md) {
@@ -1027,6 +1026,7 @@
   letter-spacing: 0.2em;
   line-height: 1;
   margin-bottom: rem(46.6);
+  margin-left: rem(5);
 
   @include mq(md) {
     font-size: rem(18);
@@ -1053,7 +1053,7 @@
 
 .contact__lead {
   background: #f7f7f7;
-  padding: rem(28.8) 0 rem(27.3);
+  padding: rem(28.8) 0 rem(21.3);
   width: 100%;
   text-align: center;
 
@@ -1070,7 +1070,7 @@
     line-height: 1;
     text-align: center;
     color: #4d4d4d;
-    padding-left: rem(63);
+    padding-left: rem(59);
     position: relative;
 
     @include mq(md) {
@@ -1082,12 +1082,12 @@
       position: absolute;
       content: "";
       top: 50%;
-      left: 0;
+      left: rem(-10);
       transform: translate(0, -50%);
       background: url(/assets/images/icon-mail.svg) center center / cover;
       background-repeat: no-repeat;
-      width: rem(37.4);
-      height: rem(31.7);
+      width: rem(41.4);
+      height: rem(35);
 
       @include mq(md) {
         width: rem(28);
@@ -1101,7 +1101,7 @@
 }
 
 .form {
-  padding: rem(45) rem(41.5) rem(54) rem(40);
+  padding: rem(41) rem(41.5) rem(54) rem(40);
   background: $color-base-1;
 
   @include mq(md) {
@@ -1113,7 +1113,7 @@ label {
   display: inline-block;
   max-width: rem(302.5);
   width: 100%;
-  padding-left: rem(66);
+  padding-left: rem(65);
   position: relative;
   text-align: left;
 
@@ -1211,8 +1211,9 @@ select {
 }
 
 .form__item {
-  margin-bottom: rem(40);
+  margin-bottom: rem(39);
   display: flex;
+
   align-items: center;
 
   @include mq(md) {
@@ -1271,6 +1272,13 @@ select {
 }
 
 .form-content {
+  align-items: start;
+  margin-bottom: rem(52);
+
+  label {
+    margin-top: rem(12);
+  }
+
   textarea {
     height: rem(160);
   }
@@ -1311,7 +1319,7 @@ textarea::placeholder {
   max-width: rem(349);
   margin: auto;
   margin-bottom: rem(40);
-  padding: rem(20) 0;
+  padding: rem(13) 0;
   border: 1px solid #cccccc;
 
   @include mq(md) {
@@ -1329,7 +1337,7 @@ textarea::placeholder {
 
   + span {
     display: inline-block;
-    padding: 0 0 0 rem(44);
+    padding: 0 0 0 rem(33);
     position: relative;
     transition: all 0.3s ease;
     font-size: rem(16);
@@ -1351,7 +1359,7 @@ textarea::placeholder {
       background: #ffffff;
       border: 1px solid $color-font;
       display: block;
-      left: 0;
+      left: rem(-10);
       width: rem(20);
       height: rem(20);
       transition: all 0.3s ease;
@@ -1447,7 +1455,7 @@ textarea::placeholder {
   max-width: rem(149);
   width: 100%;
   margin: auto;
-  margin-bottom: rem(16.6);
+  margin-bottom: rem(5.5);
 
   @include mq(md) {
     margin-bottom: rem(18.6);
@@ -1495,8 +1503,8 @@ textarea::placeholder {
     line-height: (22 / 16);
     letter-spacing: 0.03em;
     background: $color-cv;
-    padding-top: rem(72);
-    padding-bottom: rem(23);
+    padding-top: rem(69);
+    padding-bottom: rem(19);
     border-top-left-radius: rem(10);
     border-bottom-left-radius: rem(10);
     position: relative;
@@ -1525,8 +1533,8 @@ textarea::placeholder {
     line-height: (22 / 16);
     letter-spacing: 0.03em;
     background: $color-main;
-    padding-top: rem(41);
-    padding-bottom: rem(16);
+    padding-top: rem(37);
+    padding-bottom: rem(14);
     border-top-left-radius: rem(10);
     border-bottom-left-radius: rem(10);
     position: relative;
