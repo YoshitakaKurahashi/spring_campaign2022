@@ -74,7 +74,7 @@
       <h2 class="section__title about__title"><span></span>秋山住研の家づくり</h2>
       <!-- /.about__title -->
       <div class="about__lead">
-        私たちが家づくりで大切にしているもの。<br />
+        &emsp;私たちが家づくりで大切にしているもの。<br />
         それは、<span>ご家族の健康</span>と<span>住まいの快適さ</span>です。<br />
         10年、20年、30年と住まうにあたり<br />
         この2つは<span>絶対に妥協できないポイント</span>です。
@@ -411,10 +411,29 @@
               <option value="katoushiten">加東支店</option>
             </select>
           </div>
-        <div class="form-day form__item">
+        <!-- <div class="form-day form__item">
           <label class="label" for="day">ご参加希望日時</label>
           <input required class="form-calendar" name="days" id="day" type="text" placeholder="例）2022/01/01(土)" />
           <input required class="form-time" name="days" id="day" type="text" placeholder="例）17:00" />
+        </div> -->
+        <div class="form-day form__item">
+          <label class="label" for="day">ご参加希望日時</label>
+          <span class="calendar-span">
+            <input required class="form-calendar" name="days" id="day" type="text" placeholder="例）2022/01/01(土)" />
+          </span><!-- /.calendar-span -->
+          <span class="days-span">
+            <select required name="days" id="day" placeholder="例）17:00">
+              <option value="placeholder">例）17:00</option>
+              <option value="">10:00</option>
+              <option value="">11:00</option>
+              <option value="">12:00</option>
+              <option value="">13:00</option>
+              <option value="">14:00</option>
+              <option value="">15:00</option>
+              <option value="">16:00</option>
+              <option value="">17:00</option>
+            </select><!-- /# -->
+          </span><!-- /.days-span -->
         </div>
         <div class="form-name form__item">
           <label class="label" for="name">お名前</label>

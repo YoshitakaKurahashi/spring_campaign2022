@@ -174,4 +174,13 @@ jQuery(function ($) {
       swiper: sliderThumbnail
     }
   });
+  $(function () {
+    $('select').on('change', function () {
+      if ($(this).val() == "placeholder") {
+        $(this).css('color', '#D3D3D3');
+      } else {
+        $(this).css('color', '#707070');
+      }
+    });
+  });
 });
