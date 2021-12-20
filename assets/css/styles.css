@@ -1017,6 +1017,7 @@ select::-ms-expand {
 .shop {
   padding: 88px 25px 90px;
   padding: 5.5rem 25px 5.625rem;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 767px) {

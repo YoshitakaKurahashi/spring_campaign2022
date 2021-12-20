@@ -548,6 +548,7 @@
 /*  shop  ****************************/
 .shop {
   padding: rem(88) $padding-pc rem(90);
+  overflow: hidden;
 
   @include mq(md) {
     padding: rem(24.3) 0 rem(50);
